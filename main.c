@@ -5,6 +5,9 @@
 #include <string.h>
 
 //ajouter des verification de permision de utilisation de stat pour plus de portabiliter
+// changer fond ecrant linux commande
+
+
 void fichier_liste(char *path){
     DIR *rep = opendir(path);
     if (rep == NULL)
