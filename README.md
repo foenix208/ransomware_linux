@@ -1,7 +1,3 @@
-Voici un exemple de README pour ton projet d'étude en C sur un ransomware :
-
----
-
 # Projet d'Étude : Ransomware en C
 
 Ce projet implémente un ransomware simple en langage C. Le programme parcourt les fichiers d'un répertoire donné et chiffre leur contenu à l'aide d'une clé spécifique. Les fichiers chiffrés sont renommés avec l'extension `.NorVoxx`, et l'original est supprimé après le chiffrement.
