@@ -5,7 +5,7 @@
 #include <string.h>
 
 void fichier_cryp(char *path,char* file,int key){
-    char p[250],f[250];
+    char p[1024],f[1024];
     int i = -1;
     strcpy(p,path);
     strcpy(f,file);
@@ -13,16 +13,13 @@ void fichier_cryp(char *path,char* file,int key){
     FILE *fichier_in = fopen(strcat(path,file),"rb");
     while (f[++i] != '\0')
         f[i]^=key;
-
     FILE *fichier_cry = fopen(strcat(strcat(p,f),".NorVoxx"),"wb");
     if (fichier_in == NULL || fichier_cry == NULL)
         return;
-
     int buffer;
     while (fread(&buffer, sizeof(int), 1, fichier_in) == 1){
         buffer ^= key;
         fwrite(&buffer , sizeof(int),1,fichier_cry);
-        //printf("%d",buffer);
     }
     fclose(fichier_in);
     fclose(fichier_cry);
