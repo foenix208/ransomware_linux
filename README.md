@@ -63,5 +63,3 @@ La fonction principale initialise l'exécution en appelant `fichier_liste` avec 
 Ce programme imite le comportement d'un ransomware. Il est important de noter que le but de ce projet est exclusivement éducatif et ne doit pas être utilisé à des fins malveillantes. Le chiffrement des fichiers sans consentement est illégal et contraire à l'éthique.
 
 ---
-
-Tu peux ajuster ce README en fonction de tes besoins, mais cet exemple couvre les points clés et présente ton projet de manière claire.
